@@ -1,1 +1,1466 @@
+import React from 'react'
+import { span, br, p } from 'react-native'
 
+import styled from 'styled-components/native'
+
+import Header from './header'
+import PrimaryPinkButton from './primary-pink-button'
+import OutlineGrayButton from './outline-gray-button'
+import FeatureCard from './feature-card'
+import OutlineBlackButton from './outline-black-button'
+import ListItem from './list-item'
+import Footer from './footer'
+import { projectStyleVariants, TOKENS } from '.style'
+
+const Home = (props) => {
+  return (
+    <Container>
+      <Header></Header>
+      <Hero>
+        <Container01>
+          <Card>
+            <StyledText projVariant="headingOne">
+              Soft Design System.
+            </StyledText>
+            <Text01 projVariant="headingOne">Choose the best</Text01>
+            <Text02 projVariant="lead">
+              <span>
+                Find the story of Creative Tim&apos;s most complex design
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </span>
+              <span>
+                system and all the work that make this design available.
+              </span>
+            </Text02>
+            <Container02>
+              <Container03>
+                <PrimaryPinkButton button="contact us"></PrimaryPinkButton>
+              </Container03>
+              <OutlineGrayButton button="read more"></OutlineGrayButton>
+            </Container02>
+            <Container04>
+              <StyledImage
+                source={{
+                  uri: 'https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-pinterest.svg',
+                }}
+                alt="image"
+              ></StyledImage>
+              <Image01
+                source={{
+                  uri: 'https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-netflix.svg',
+                }}
+                alt="image"
+              ></Image01>
+              <Image02
+                source={{
+                  uri: 'https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-coinbase.svg',
+                }}
+                alt="image"
+              ></Image02>
+              <Image03
+                source={{
+                  uri: 'https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/gray-logos/logo-nasa.svg',
+                }}
+                alt="image"
+              ></Image03>
+            </Container04>
+          </Card>
+        </Container01>
+      </Hero>
+      <Image04
+        source={require('../playground_assets/curved6-1500h.jpg')}
+        alt="image"
+      ></Image04>
+      <Features>
+        <FeatureCard
+          text="Choose the best design system for your next product."
+          title="Components"
+          image_src="/playground_assets/cube1.svg"
+        ></FeatureCard>
+        <FeatureCard image_src="/playground_assets/person1.svg"></FeatureCard>
+        <FeatureCard
+          text="Make your code easier to maintain using variables."
+          title="Less Code"
+          image_src="/playground_assets/rocket1.svg"
+        ></FeatureCard>
+        <FeatureCard
+          text="This design system is fully supported on any device."
+          title="Fully Responsive"
+          image_src="/playground_assets/credit%20card1.svg"
+        ></FeatureCard>
+      </Features>
+      <Container05>
+        <Container06>
+          <Text05 projVariant="headingOne">
+            <Text06>From nothing to something</Text06>
+          </Text05>
+          <Text07>
+            <Text08>
+              The highest status people in human history are those that asked
+              for nothing and gave everything
+            </Text08>
+          </Text07>
+        </Container06>
+        <Container07>
+          <Container08>
+            <Image05
+              source={{
+                uri: 'https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/laptop.jpg',
+              }}
+              alt="image"
+            ></Image05>
+            <Text09 projVariant="small">
+              <Text10>
+                &quot;Over the span of the satellite record, Arctic sea ice has
+                been declining significantly, while sea ice in the Antarctichas
+                increased very slightly&quot;
+              </Text10>
+              <br></br>
+              <Text12>-NOAA</Text12>
+            </Text09>
+            <Container09>
+              <Image06
+                source={{
+                  uri: 'https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/coding.jpg',
+                }}
+                alt="image"
+              ></Image06>
+            </Container09>
+          </Container08>
+          <Container10>
+            <Image07
+              source={{
+                uri: 'https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/tasks.jpg',
+              }}
+              alt="image"
+            ></Image07>
+            <Container11>
+              <Text13 projVariant="headingTwo">
+                <Text14>
+                  So what does the new record for the lowest level of winter ice
+                  actually mean
+                </Text14>
+              </Text13>
+              <p>
+                <br></br>
+                <Text16>
+                  The Arctic Ocean freezes every winter and much of the sea-ice
+                  then thaws every summer, and that process will continue
+                  whatever happens with climate change. Even if the Arctic
+                  continues to be one of the fastest-warming regions of the
+                  world, it will always be plunged into bitterly cold polar dark
+                  every winter. And year-by-year, for all kinds of natural
+                  reasons, there’s huge variety of the state of the ice.
+                </Text16>
+                <br></br>
+                <span></span>
+                <br></br>
+                <Text19>
+                  For a start, it does not automatically follow that a record
+                  amount of ice will melt this summer. More important for
+                  determining the size of the annual thaw is the state of the
+                  weather as the midnight sun approaches and temperatures rise.
+                  But over the more than 30 years of satellite records,
+                  scientists have observed a clear pattern of decline,
+                  decade-by-decade.
+                </Text19>
+                <br></br>
+                <span></span>
+                <br></br>
+                <Text22>
+                  The Arctic Ocean freezes every winter and much of the sea-ice
+                  then thaws every summer, and that process will continue
+                  whatever happens with climate change. Even if the Arctic
+                  continues to be one of the fastest-warming regions of the
+                  world, it will always be plunged into bitterly cold polar dark
+                  every winter. And year-by-year, for all kinds of natural
+                  reasons, there’s huge variety of the state of the ice.
+                </Text22>
+                <br></br>
+              </p>
+            </Container11>
+          </Container10>
+        </Container07>
+      </Container05>
+      <Testimonials>
+        <Container12>
+          <Container13>
+            <Container14>
+              <Text23 projVariant="headingOne">Work with us</Text23>
+              <Text24 projVariant="lead">
+                <Text25>Whatever your qualification is - we got you!</Text25>
+              </Text24>
+              <Text26 projVariant="body">
+                <Text27>
+                  &quot;Take up one idea. Make that one idea your life - think
+                  of it, dream of it, live on that idea. Let the brain, muscles,
+                  nerves, every part of your body, be full of that idea, and
+                  just leave every other idea alone. This is the way to success.
+                  A single rose can be my garden... a single friend, my
+                  world.&quot;
+                </Text27>
+              </Text26>
+              <Text28>Mark Jojansen</Text28>
+              <Text29 projVariant="small">Project manager, Atlassian</Text29>
+              <Container15>
+                <Image08
+                  source={require('../playground_assets/team-4-200h.jpg')}
+                  alt="image"
+                ></Image08>
+                <Container16></Container16>
+                <Image09
+                  source={require('../playground_assets/team-3-200h.jpg')}
+                  alt="image"
+                ></Image09>
+                <Container17></Container17>
+                <Image10
+                  source={require('../playground_assets/team-2-200h.jpg')}
+                  alt="image"
+                ></Image10>
+              </Container15>
+            </Container14>
+          </Container13>
+          <Logos>
+            <Container18>
+              <Container19>
+                <Container20>
+                  <Image11
+                    source={require('../playground_assets/logo-asana.svg')}
+                    alt="image"
+                  ></Image11>
+                </Container20>
+                <Container21>
+                  <Image12
+                    source={require('../playground_assets/logo-slack.svg')}
+                    alt="image"
+                  ></Image12>
+                </Container21>
+                <Container22>
+                  <Image13
+                    source={require('../playground_assets/logo-google-drive.svg')}
+                    alt="image"
+                  ></Image13>
+                </Container22>
+              </Container19>
+              <Container23>
+                <Container24>
+                  <Image14
+                    source={require('../playground_assets/logo-shopify.svg')}
+                    alt="image"
+                  ></Image14>
+                </Container24>
+                <Container25>
+                  <Image15
+                    source={{
+                      uri: 'https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/logos/small-logos/logo-apple.svg',
+                    }}
+                    alt="image"
+                  ></Image15>
+                </Container25>
+                <Container26>
+                  <Image16
+                    source={require('../playground_assets/logo-invision.svg')}
+                    alt="image"
+                  ></Image16>
+                </Container26>
+              </Container23>
+              <Container27>
+                <Container28>
+                  <Image17
+                    source={require('../playground_assets/logo-attlasian.svg')}
+                    alt="image"
+                  ></Image17>
+                </Container28>
+                <Container29>
+                  <Image18
+                    source={require('../playground_assets/logo-weave.svg')}
+                    alt="image"
+                  ></Image18>
+                </Container29>
+              </Container27>
+            </Container18>
+          </Logos>
+        </Container12>
+        <BottomWaveImage
+          source={require('../playground_assets/bottom.svg')}
+          alt="image"
+        ></BottomWaveImage>
+        <Image19
+          source={require('../playground_assets/waves-white.svg')}
+          alt="image"
+        ></Image19>
+        <TopWaveImage
+          source={require('../playground_assets/top.svg')}
+          alt="image"
+        ></TopWaveImage>
+      </Testimonials>
+      <Contaier>
+        <Container30>
+          <Container31>
+            <Icon viewBox="0 0 1024 1024">
+              <path d="M363.722 722.052l41.298-57.816-45.254-45.256-57.818 41.296c-10.722-5.994-22.204-10.774-34.266-14.192l-11.682-70.084h-64l-11.68 70.086c-12.062 3.418-23.544 8.198-34.266 14.192l-57.818-41.298-45.256 45.256 41.298 57.816c-5.994 10.72-10.774 22.206-14.192 34.266l-70.086 11.682v64l70.086 11.682c3.418 12.060 8.198 23.544 14.192 34.266l-41.298 57.816 45.254 45.256 57.818-41.296c10.722 5.994 22.204 10.774 34.266 14.192l11.682 70.084h64l11.68-70.086c12.062-3.418 23.544-8.198 34.266-14.192l57.818 41.296 45.254-45.256-41.298-57.816c5.994-10.72 10.774-22.206 14.192-34.266l70.088-11.68v-64l-70.086-11.682c-3.418-12.060-8.198-23.544-14.192-34.266zM224 864c-35.348 0-64-28.654-64-64s28.652-64 64-64 64 28.654 64 64-28.652 64-64 64zM1024 384v-64l-67.382-12.25c-1.242-8.046-2.832-15.978-4.724-23.79l57.558-37.1-24.492-59.128-66.944 14.468c-4.214-6.91-8.726-13.62-13.492-20.13l39.006-56.342-45.256-45.254-56.342 39.006c-6.512-4.766-13.22-9.276-20.13-13.494l14.468-66.944-59.128-24.494-37.1 57.558c-7.812-1.892-15.744-3.482-23.79-4.724l-12.252-67.382h-64l-12.252 67.382c-8.046 1.242-15.976 2.832-23.79 4.724l-37.098-57.558-59.128 24.492 14.468 66.944c-6.91 4.216-13.62 8.728-20.13 13.494l-56.342-39.006-45.254 45.254 39.006 56.342c-4.766 6.51-9.278 13.22-13.494 20.13l-66.944-14.468-24.492 59.128 57.558 37.1c-1.892 7.812-3.482 15.742-4.724 23.79l-67.384 12.252v64l67.382 12.25c1.242 8.046 2.832 15.978 4.724 23.79l-57.558 37.1 24.492 59.128 66.944-14.468c4.216 6.91 8.728 13.618 13.494 20.13l-39.006 56.342 45.254 45.256 56.342-39.006c6.51 4.766 13.22 9.276 20.13 13.492l-14.468 66.944 59.128 24.492 37.102-57.558c7.81 1.892 15.742 3.482 23.788 4.724l12.252 67.384h64l12.252-67.382c8.044-1.242 15.976-2.832 23.79-4.724l37.1 57.558 59.128-24.492-14.468-66.944c6.91-4.216 13.62-8.726 20.13-13.492l56.342 39.006 45.256-45.256-39.006-56.342c4.766-6.512 9.276-13.22 13.492-20.13l66.944 14.468 24.492-59.13-57.558-37.1c1.892-7.812 3.482-15.742 4.724-23.79l67.382-12.25zM672 491.2c-76.878 0-139.2-62.322-139.2-139.2s62.32-139.2 139.2-139.2 139.2 62.322 139.2 139.2c0 76.878-62.32 139.2-139.2 139.2z"></path>
+            </Icon>
+          </Container31>
+          <Text30 projVariant="headingTwo">
+            <Text31>Beware The Components</Text31>
+          </Text30>
+          <Text32 projVariant="headingTwo">
+            <Text33>How To Handle Them</Text33>
+            <br></br>
+          </Text32>
+          <Text34>
+            <Text35>
+              We’re constantly trying to express ourselves and actualize our
+              dreams. Don&apos;t stop.
+            </Text35>
+          </Text34>
+        </Container30>
+        <Container32>
+          <Container33>
+            <Container34></Container34>
+            <Container35>
+              <Icon2 viewBox="0 0 987.4285714285713 1024">
+                <path d="M438.857 508.571l312 312c-79.429 80.571-190.286 130.286-312 130.286-242.286 0-438.857-196.571-438.857-438.857s196.571-438.857 438.857-438.857v435.429zM545.714 512h441.714c0 121.714-49.714 232.571-130.286 312zM950.857 438.857h-438.857v-438.857c242.286 0 438.857 196.571 438.857 438.857z"></path>
+              </Icon2>
+              <Text36 projVariant="headingOne">Search and Discover!</Text36>
+              <Text37>
+                <span>Website visitors</span>
+                <span></span>
+              </Text37>
+              <OutlineBlackButton button="get started"></OutlineBlackButton>
+            </Container35>
+          </Container33>
+          <Container36>
+            <ListItem></ListItem>
+            <ListItem
+              title="2. Performance Analyze"
+              description="Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights from easy-to-use reports."
+            ></ListItem>
+            <ListItem
+              title="3. Social Conversions"
+              description="Track actions taken on your website that originated from social, and understand the impact on your bottom line."
+            ></ListItem>
+          </Container36>
+        </Container32>
+        <Divider></Divider>
+        <Container37>
+          <Container38>
+            <ListItem
+              title="1. Always in Sync"
+              description="No matter where you are, Trello stays in sync across all of your devices."
+            ></ListItem>
+            <ListItem
+              title="2. Work With Any Team"
+              description="Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights from easy-to-use reports."
+            ></ListItem>
+            <ListItem
+              title="3. A Productivity Platform"
+              description="Integrate the apps your team already uses directly into your workflow."
+            ></ListItem>
+          </Container38>
+          <Container39>
+            <Container40></Container40>
+            <Container41>
+              <Icon4 viewBox="0 0 1152 1024">
+                <path d="M1088 901.166c0 45.5 26.028 84.908 64 104.184v15.938c-10.626 1.454-21.472 2.224-32.5 2.224-68.008 0-129.348-28.528-172.722-74.264-26.222 6.982-54.002 10.752-82.778 10.752-159.058 0-288-114.616-288-256s128.942-256 288-256c159.058 0 288 114.616 288 256 0 55.348-19.764 106.592-53.356 148.466-6.824 14.824-10.644 31.312-10.644 48.7zM512 0c278.458 0 504.992 180.614 511.836 405.52-49.182-21.92-103.586-33.52-159.836-33.52-95.56 0-185.816 33.446-254.138 94.178-70.846 62.972-109.862 147.434-109.862 237.822 0 44.672 9.544 87.888 27.736 127.788-5.228 0.126-10.468 0.212-15.736 0.212-27.156 0-53.81-1.734-79.824-5.044-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416z"></path>
+              </Icon4>
+              <Text40 projVariant="headingOne">Talk and Meet!</Text40>
+              <Text41>
+                <span>Website visitors</span>
+                <span></span>
+              </Text41>
+              <OutlineBlackButton button="get started"></OutlineBlackButton>
+            </Container41>
+          </Container39>
+        </Container37>
+      </Contaier>
+      <Footer></Footer>
+    </Container>
+  )
+}
+
+export default Home
+
+const Container = styled('div')({
+  width: '100%',
+  height: 'auto',
+  display: 'flex',
+  'min-height': '100vh',
+  'align-items': 'center',
+  'flex-direction': 'column',
+})
+
+const Hero = styled('div')({
+  width: '100%',
+  display: 'flex',
+  'max-width': '1320px',
+  'padding-left': TOKENS.DlSpaceSpaceUnitandahalfunit,
+  'padding-right': TOKENS.DlSpaceSpaceUnitandahalfunit,
+  'justify-content': 'center',
+  '@media(max-width: 991px)': {
+    'padding-left': TOKENS.DlSpaceSpaceTripleunit,
+    'padding-right': TOKENS.DlSpaceSpaceTripleunit,
+  },
+})
+
+const Container01 = styled('div')({
+  width: '100%',
+  display: 'flex',
+  'max-width': '1320px',
+  position: 'relative',
+  'min-height': '85vh',
+  'align-items': 'flex-start',
+  'flex-direction': 'column',
+  'justify-content': 'center',
+  '@media(max-width: 991px)': {
+    'max-width': '960px',
+  },
+})
+
+const Card = styled('div')({
+  flex: '0 0 auto',
+  width: '60%',
+  'z-index': '1',
+  display: 'flex',
+  padding: TOKENS.DlSpaceSpaceTripleunit,
+  'box-shadow':
+    '0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important',
+  'margin-top': TOKENS.DlSpaceSpaceTripleunit,
+  'align-items': 'flex-start',
+  'border-radius': TOKENS.DlRadiusRadiusRadius1,
+  'flex-direction': 'column',
+  'backdrop-filter': 'saturate(200%) blur(30px)',
+  'background-color': 'hsla(0,0%,100%,.8)',
+  '@media(max-width: 991px)': {
+    width: '100%',
+  },
+  '@media(max-width: 767px)': {
+    'align-items': 'center',
+  },
+  '@media(max-width: 479px)': {
+    padding: TOKENS.DlSpaceSpaceUnit,
+  },
+})
+
+const StyledText = styled('h1')(projectStyleVariants, {
+  'text-align': 'center',
+  'background-image': 'linear-gradient(310deg,#7928ca,#ff0080)',
+  'webkit-text-fill-color': 'transparent',
+  'webkit-background-clip': 'text',
+})
+
+const Text01 = styled('h1')(projectStyleVariants, {
+  color: TOKENS.DlColorSecondary700,
+  'text-align': 'center',
+  'margin-bottom': TOKENS.DlSpaceSpaceUnitandahalfunit,
+})
+
+const Text02 = styled('span')(projectStyleVariants, {
+  color: TOKENS.DlColorSecondary600,
+  'margin-right': TOKENS.DlSpaceSpaceTripleunit,
+  'margin-bottom': TOKENS.DlSpaceSpaceUnit,
+  'padding-right': TOKENS.DlSpaceSpaceTripleunit,
+  '@media(max-width: 767px)': {
+    'text-align': 'center',
+    'margin-right': '0px',
+    'padding-right': '0px',
+  },
+})
+
+const Container02 = styled('div')({
+  display: 'flex',
+  'margin-top': TOKENS.DlSpaceSpaceUnitandahalfunit,
+  'align-items': 'flex-start',
+  'margin-bottom': TOKENS.DlSpaceSpaceUnit,
+  'flex-direction': 'row',
+  '@media(max-width: 479px)': {
+    'align-items': 'center',
+    'flex-direction': 'column',
+  },
+})
+
+const Container03 = styled('div')({
+  display: 'flex',
+  'align-items': 'flex-start',
+  'margin-right': TOKENS.DlSpaceSpaceUnit,
+  'flex-direction': 'row',
+  '@media(max-width: 479px)': {
+    'margin-right': '0px',
+    'margin-bottom': TOKENS.DlSpaceSpaceUnit,
+  },
+})
+
+const Container04 = styled('div')({
+  flex: '0 0 auto',
+  width: '100%',
+  display: 'flex',
+  'flex-wrap': 'wrap',
+  'margin-top': TOKENS.DlSpaceSpaceHalfunit,
+  'align-items': 'flex-start',
+  'flex-direction': 'row',
+  'justify-content': 'center',
+})
+
+const StyledImage = styled('Image')({
+  width: '25%',
+  'object-fit': 'cover',
+  '@media(max-width: 767px)': {
+    width: '40%',
+  },
+})
+
+const Image01 = styled('Image')({
+  width: '25%',
+  'object-fit': 'cover',
+  '@media(max-width: 767px)': {
+    width: '40%',
+  },
+})
+
+const Image02 = styled('Image')({
+  width: '25%',
+  'object-fit': 'cover',
+  '@media(max-width: 767px)': {
+    width: '40%',
+  },
+})
+
+const Image03 = styled('Image')({
+  width: '25%',
+  'object-fit': 'cover',
+  '@media(max-width: 767px)': {
+    width: '40%',
+  },
+})
+
+const Image04 = styled('Image')({
+  top: '0px',
+  left: 'auto',
+  right: '0px',
+  width: '50%',
+  bottom: '0px',
+  height: '80vh',
+  position: 'absolute',
+  'object-fit': 'cover',
+  'object-position': 'right',
+  'border-bottom-left-radius': '10rem',
+  '@media(max-width: 767px)': {
+    display: 'none',
+  },
+})
+
+const Features = styled('section')({
+  width: '100%',
+  display: 'flex',
+  'flex-wrap': 'wrap',
+  'max-width': '1320px',
+  'align-items': 'flex-start',
+  'padding-top': TOKENS.DlSpaceSpaceSixunits,
+  'padding-left': TOKENS.DlSpaceSpaceTripleunit,
+  'padding-right': TOKENS.DlSpaceSpaceTripleunit,
+  'flex-direction': 'row',
+  'padding-bottom': TOKENS.DlSpaceSpaceSixunits,
+  '@media(max-width: 991px)': {
+    'max-width': '960px',
+  },
+  '@media(max-width: 767px)': {
+    'max-width': '720px',
+    'padding-top': TOKENS.DlSpaceSpaceDoubleunit,
+    'padding-left': TOKENS.DlSpaceSpaceUnitandahalfunit,
+    'padding-right': TOKENS.DlSpaceSpaceUnitandahalfunit,
+    'padding-bottom': TOKENS.DlSpaceSpaceDoubleunit,
+  },
+  '@media(max-width: 479px)': {
+    width: '100%',
+  },
+})
+
+const Container05 = styled('section')({
+  flex: '0 0 auto',
+  width: '100%',
+  display: 'flex',
+  'max-width': '1320px',
+  'align-items': 'center',
+  'padding-top': TOKENS.DlSpaceSpaceSixunits,
+  'padding-left': TOKENS.DlSpaceSpaceTripleunit,
+  'padding-right': TOKENS.DlSpaceSpaceTripleunit,
+  'flex-direction': 'column',
+  'padding-bottom': TOKENS.DlSpaceSpaceSixunits,
+  '@media(max-width: 991px)': {
+    'max-width': '960px',
+    'padding-left': TOKENS.DlSpaceSpaceDoubleunit,
+    'padding-right': TOKENS.DlSpaceSpaceDoubleunit,
+  },
+  '@media(max-width: 767px)': {
+    'max-width': '720px',
+  },
+})
+
+const Container06 = styled('div')({
+  display: 'flex',
+  'align-items': 'center',
+  'margin-left': 'auto',
+  'margin-right': 'auto',
+  'flex-direction': 'column',
+  '@media(max-width: 991px)': {
+    'max-width': '80%',
+  },
+})
+
+const Text05 = styled('h1')(projectStyleVariants, {
+  'margin-bottom': TOKENS.DlSpaceSpaceHalfunit,
+  'background-image': 'linear-gradient(310deg,#7928ca,#ff0080)',
+  'webkit-text-fill-color': 'transparent',
+  'webkit-background-clip': 'text',
+})
+
+const Text06 = styled('span')({
+  color: 'rgb(203, 12, 159)',
+  'white-space': 'normal',
+  'text-decoration': 'none',
+})
+
+const Text07 = styled('span')({
+  'max-width': '600px',
+  'text-align': 'center',
+  'margin-bottom': TOKENS.DlSpaceSpaceHalfunit,
+  '@media(max-width: 991px)': {
+    'text-align': 'center',
+  },
+})
+
+const Text08 = styled('span')({
+  color: 'rgb(103, 116, 142)',
+  display: 'inline',
+  'font-weight': '400',
+  'white-space': 'normal',
+  'background-color': 'rgb(255, 255, 255)',
+})
+
+const Container07 = styled('div')({
+  flex: '0 0 auto',
+  width: '100%',
+  display: 'flex',
+  'flex-wrap': 'wrap',
+  'margin-top': TOKENS.DlSpaceSpaceTripleunit,
+  'align-items': 'flex-start',
+  'margin-left': TOKENS.DlSpaceSpaceUnitandahalfunit,
+  'margin-right': TOKENS.DlSpaceSpaceUnitandahalfunit,
+  'flex-direction': 'row',
+  '@media(max-width: 767px)': {
+    'align-items': 'center',
+    'flex-direction': 'column',
+  },
+})
+
+const Container08 = styled('div')({
+  flex: '0 0 auto',
+  width: '50%',
+  height: '100%',
+  display: 'flex',
+  position: 'relative',
+  'align-items': 'flex-start',
+  'flex-direction': 'column',
+  '@media(max-width: 767px)': {
+    width: '80%',
+  },
+})
+
+const Image05 = styled('Image')({
+  width: '100%',
+  'box-shadow':
+    '0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important',
+  'object-fit': 'cover',
+  'margin-left': '3rem',
+  'margin-right': '-3rem',
+  'border-radius': TOKENS.DlRadiusRadiusRadius75,
+  '@media(max-width: 767px)': {
+    'margin-left': '0px',
+    'margin-right': '0px',
+  },
+})
+
+const Text09 = styled('span')(projectStyleVariants, {
+  flex: '0 0 auto',
+  width: '40%',
+  display: 'flex',
+  padding: TOKENS.DlSpaceSpaceUnit,
+  'align-self': 'flex-end',
+  'margin-top': TOKENS.DlSpaceSpaceUnitandahalfunit,
+  'align-items': 'flex-start',
+  'border-color': '#cb0c9f',
+  'border-style': 'solid',
+  'border-width': '1px',
+  'border-radius': '0.25rem',
+  'margin-bottom': '8rem',
+  'flex-direction': 'column',
+  '@media(max-width: 991px)': {
+    width: '50%',
+  },
+  '@media(max-width: 767px)': {
+    width: '70%',
+    'align-self': 'center',
+    'margin-top': TOKENS.DlSpaceSpaceTripleunit,
+    'margin-bottom': TOKENS.DlSpaceSpaceTripleunit,
+  },
+})
+
+const Text10 = styled('span')({
+  color: 'rgb(203, 12, 159)',
+  display: 'inline',
+  'font-weight': '400',
+  'white-space': 'normal',
+  'background-color': 'rgb(255, 255, 255)',
+})
+
+const Text12 = styled('span')({
+  color: 'rgb(203, 12, 159)',
+  'font-weight': '400',
+  'background-color': 'rgb(255, 255, 255)',
+})
+
+const Container09 = styled('div')({
+  width: '100%',
+  height: '100%',
+  display: 'flex',
+  position: 'relative',
+  'align-items': 'flex-start',
+  'flex-direction': 'column',
+})
+
+const Image06 = styled('Image')({
+  top: '0px',
+  left: 'auto',
+  width: '90%',
+  bottom: 'auto',
+  display: 'block',
+  position: 'absolute',
+  'box-shadow':
+    '0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important',
+  'margin-top': '-1.5rem',
+  'object-fit': 'cover',
+  'margin-left': '2rem',
+  'border-radius': TOKENS.DlRadiusRadiusRadius75,
+  'margin-bottom': TOKENS.DlSpaceSpaceTripleunit,
+  '@media(max-width: 767px)': {
+    display: 'none',
+  },
+})
+
+const Container10 = styled('div')({
+  flex: '0 0 auto',
+  width: '40%',
+  display: 'flex',
+  position: 'relative',
+  'align-items': 'flex-start',
+  'padding-left': TOKENS.DlSpaceSpaceTriplequarterunit,
+  'padding-right': TOKENS.DlSpaceSpaceTriplequarterunit,
+  'flex-direction': 'column',
+  '@media(max-width: 767px)': {
+    width: '80%',
+  },
+})
+
+const Image07 = styled('Image')({
+  width: '100%',
+  'box-shadow':
+    '0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important',
+  'margin-top': '8rem',
+  'object-fit': 'cover',
+  'margin-left': '-1.5rem',
+  'border-radius': TOKENS.DlRadiusRadiusRadius75,
+  'margin-bottom': TOKENS.DlSpaceSpaceTripleunit,
+  '@media(max-width: 767px)': {
+    display: 'none',
+  },
+})
+
+const Container11 = styled('div')({
+  width: '90%',
+  display: 'flex',
+  'align-self': 'center',
+  'align-items': 'flex-start',
+  'flex-direction': 'column',
+})
+
+const Text13 = styled('h3')(projectStyleVariants)
+
+const Text14 = styled('span')({
+  color: 'rgb(37, 47, 64)',
+  'font-weight': '700',
+  'white-space': 'normal',
+  'background-color': 'rgb(255, 255, 255)',
+})
+
+const Text16 = styled('span')({
+  color: 'rgb(103, 116, 142)',
+  'font-weight': '400',
+  'white-space': 'normal',
+  'background-color': 'rgb(255, 255, 255)',
+})
+
+const Text19 = styled('span')({
+  color: 'rgb(103, 116, 142)',
+  'font-weight': '400',
+  'white-space': 'normal',
+  'background-color': 'rgb(255, 255, 255)',
+})
+
+const Text22 = styled('span')({
+  color: 'rgb(103, 116, 142)',
+  'font-weight': '400',
+  'white-space': 'normal',
+  'background-color': 'rgb(255, 255, 255)',
+})
+
+const Testimonials = styled('section')({
+  flex: '0 0 auto',
+  width: '100%',
+  display: 'flex',
+  position: 'relative',
+  'align-items': 'center',
+  'flex-direction': 'column',
+  'background-image': 'linear-gradient(310deg,#7928ca,#ff0080)',
+})
+
+const Container12 = styled('div')({
+  flex: '0 0 auto',
+  width: '100%',
+  'z-index': '1',
+  display: 'flex',
+  'max-width': '1320px',
+  'align-items': 'flex-start',
+  'padding-top': '15rem',
+  'padding-left': TOKENS.DlSpaceSpaceTripleunit,
+  'padding-right': TOKENS.DlSpaceSpaceTripleunit,
+  'flex-direction': 'row',
+  'padding-bottom': '15rem',
+  'justify-content': 'space-between',
+  '@media(max-width: 991px)': {
+    'padding-left': TOKENS.DlSpaceSpaceDoubleunit,
+    'padding-right': TOKENS.DlSpaceSpaceDoubleunit,
+    'justify-content': 'center',
+  },
+  '@media(max-width: 767px)': {
+    'padding-top': '12rem',
+    'padding-bottom': '12rem',
+  },
+  '@media(max-width: 479px)': {
+    'padding-top': TOKENS.DlSpaceSpaceSixunits,
+    'padding-bottom': TOKENS.DlSpaceSpaceSixunits,
+  },
+})
+
+const Container13 = styled('div')({
+  flex: '1',
+  width: 'auto',
+  height: 'auto',
+  display: 'flex',
+  'align-items': 'space-between',
+  'flex-direction': 'column',
+  '@media(max-width: 991px)': {
+    'align-items': 'center',
+  },
+})
+
+const Container14 = styled('div')({
+  display: 'flex',
+  'max-width': '600px',
+  'align-items': 'flex-start',
+  'margin-right': TOKENS.DlSpaceSpaceTripleunit,
+  'flex-direction': 'column',
+  '@media(max-width: 991px)': {
+    'margin-right': '0px',
+  },
+})
+
+const Text23 = styled('h2')(projectStyleVariants, {
+  color: TOKENS.DlColorGrayWhite,
+})
+
+const Text24 = styled('p')(projectStyleVariants, {
+  color: TOKENS.DlColorGrayWhite,
+  opacity: '0.8',
+  'margin-bottom': TOKENS.DlSpaceSpaceDoubleunit,
+})
+
+const Text25 = styled('span')({
+  display: 'inline',
+  'font-weight': '400',
+  'white-space': 'normal',
+})
+
+const Text26 = styled('p')(projectStyleVariants, {
+  color: TOKENS.DlColorGrayWhite,
+  opacity: '0.8',
+  'margin-bottom': TOKENS.DlSpaceSpaceDoubleunit,
+})
+
+const Text27 = styled('span')({
+  display: 'inline',
+  'font-weight': '600',
+  'white-space': 'normal',
+})
+
+const Text28 = styled('p')({
+  color: TOKENS.DlColorGrayWhite,
+})
+
+const Text29 = styled('p')(projectStyleVariants, {
+  color: TOKENS.DlColorGrayWhite,
+  opacity: '0.8',
+})
+
+const Container15 = styled('div')({
+  flex: '0 0 auto',
+  display: 'flex',
+  'margin-top': TOKENS.DlSpaceSpaceDoubleunit,
+  'align-items': 'center',
+  'flex-direction': 'row',
+  'justify-content': 'center',
+})
+
+const Image08 = styled('Image')({
+  width: '40px',
+  opacity: '0.5',
+  'object-fit': 'cover',
+  transition: '0.3',
+  'border-radius': TOKENS.DlRadiusRadiusRadius75,
+  '&:hover': {
+    transform: 'scale(1.2)',
+  },
+})
+
+const Container16 = styled('div')({
+  flex: '0 0 auto',
+  width: '1px',
+  height: '25px',
+  display: 'flex',
+  opacity: '0.8',
+  'align-items': 'flex-start',
+  'margin-left': TOKENS.DlSpaceSpaceUnit,
+  'margin-right': TOKENS.DlSpaceSpaceUnit,
+  'flex-direction': 'column',
+  'background-color': TOKENS.DlColorGrayWhite,
+})
+
+const Image09 = styled('Image')({
+  width: '40px',
+  opacity: '0.5',
+  'object-fit': 'cover',
+  transition: '0.3',
+  'border-radius': TOKENS.DlRadiusRadiusRadius75,
+  '&:hover': {
+    transform: 'scale(1.2)',
+  },
+})
+
+const Container17 = styled('div')({
+  flex: '0 0 auto',
+  width: '1px',
+  height: '25px',
+  display: 'flex',
+  opacity: '0.8',
+  'align-items': 'flex-start',
+  'margin-left': TOKENS.DlSpaceSpaceUnit,
+  'margin-right': TOKENS.DlSpaceSpaceUnit,
+  'flex-direction': 'column',
+  'background-color': TOKENS.DlColorGrayWhite,
+})
+
+const Image10 = styled('Image')({
+  width: '40px',
+  'object-fit': 'cover',
+  transition: '0.3',
+  'border-radius': TOKENS.DlRadiusRadiusRadius75,
+  '&:hover': {
+    transform: 'scale(1.2)',
+  },
+})
+
+const Logos = styled('div')({
+  display: 'flex',
+  'align-items': 'flex-start',
+  'flex-direction': 'row',
+  'justify-content': 'space-between',
+  '@media(max-width: 991px)': {
+    display: 'none',
+  },
+})
+
+const Container18 = styled('div')({
+  flex: '0 0 auto',
+  display: 'flex',
+  'min-width': '400px',
+  'align-items': 'flex-start',
+  'padding-left': TOKENS.DlSpaceSpaceTriplequarterunit,
+  'flex-direction': 'column',
+})
+
+const Container19 = styled('div')({
+  flex: '0 0 auto',
+  width: '100%',
+  height: '100px',
+  display: 'flex',
+  'align-items': 'flex-start',
+  'margin-bottom': TOKENS.DlSpaceSpaceTripleunit,
+  'flex-direction': 'row',
+  'justify-content': 'space-between',
+})
+
+const Container20 = styled('div')({
+  width: '58px',
+  height: '58px',
+  padding: TOKENS.DlSpaceSpaceUnit,
+  'align-self': 'flex-end',
+  'object-fit': 'cover',
+  'margin-left': TOKENS.DlSpaceSpaceUnit,
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'background-color': TOKENS.DlColorGrayWhite,
+})
+
+const Image11 = styled('Image')({
+  width: '100%',
+})
+
+const Container21 = styled('div')({
+  width: '58px',
+  height: '58px',
+  padding: TOKENS.DlSpaceSpaceUnit,
+  'object-fit': 'cover',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'background-color': TOKENS.DlColorGrayWhite,
+})
+
+const Image12 = styled('Image')({
+  width: '100%',
+})
+
+const Container22 = styled('div')({
+  width: '58px',
+  height: '58px',
+  padding: TOKENS.DlSpaceSpaceUnit,
+  'align-self': 'flex-end',
+  'object-fit': 'cover',
+  'margin-right': TOKENS.DlSpaceSpaceUnit,
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'background-color': TOKENS.DlColorGrayWhite,
+})
+
+const Image13 = styled('Image')({
+  width: '100%',
+})
+
+const Container23 = styled('div')({
+  flex: '0 0 auto',
+  width: '100%',
+  height: '70px',
+  display: 'flex',
+  'align-items': 'center',
+  'margin-bottom': TOKENS.DlSpaceSpaceTripleunit,
+  'flex-direction': 'row',
+  'justify-content': 'space-between',
+})
+
+const Container24 = styled('div')({
+  width: '58px',
+  height: '58px',
+  padding: TOKENS.DlSpaceSpaceUnit,
+  'object-fit': 'cover',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'background-color': TOKENS.DlColorGrayWhite,
+})
+
+const Image14 = styled('Image')({
+  width: '100%',
+  'object-fit': 'cover',
+})
+
+const Container25 = styled('div')({
+  width: '58px',
+  height: '58px',
+  padding: TOKENS.DlSpaceSpaceUnit,
+  'align-self': 'center',
+  'object-fit': 'cover',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'background-color': TOKENS.DlColorGrayWhite,
+})
+
+const Image15 = styled('Image')({
+  width: '100%',
+})
+
+const Container26 = styled('div')({
+  width: '58px',
+  padding: TOKENS.DlSpaceSpaceUnit,
+  'align-self': 'flex-end',
+  'object-fit': 'cover',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'background-color': TOKENS.DlColorGrayWhite,
+})
+
+const Image16 = styled('Image')({
+  width: '100%',
+})
+
+const Container27 = styled('div')({
+  flex: '0 0 auto',
+  width: '50%',
+  height: '70px',
+  display: 'flex',
+  'align-self': 'center',
+  'align-items': 'center',
+  'flex-direction': 'row',
+  'justify-content': 'space-between',
+})
+
+const Container28 = styled('div')({
+  width: '58px',
+  height: '58px',
+  padding: TOKENS.DlSpaceSpaceUnit,
+  'object-fit': 'cover',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'background-color': TOKENS.DlColorGrayWhite,
+})
+
+const Image17 = styled('Image')({
+  width: '100%',
+})
+
+const Container29 = styled('div')({
+  width: '58px',
+  height: '58px',
+  padding: TOKENS.DlSpaceSpaceUnit,
+  'align-self': 'flex-end',
+  'object-fit': 'cover',
+  'border-radius': TOKENS.DlRadiusRadiusRound,
+  'background-color': TOKENS.DlColorGrayWhite,
+})
+
+const Image18 = styled('Image')({
+  width: '100%',
+  'object-fit': 'cover',
+})
+
+const BottomWaveImage = styled('Image')({
+  top: 'auto',
+  left: 'auto',
+  right: '0px',
+  width: '100%',
+  bottom: '-5px',
+  position: 'absolute',
+  'object-fit': 'cover',
+})
+
+const Image19 = styled('Image')({
+  top: 'auto',
+  left: '0px',
+  right: '0px',
+  width: '100%',
+  bottom: 'auto',
+  height: '100%',
+  position: 'absolute',
+  'object-fit': 'cover',
+})
+
+const TopWaveImage = styled('Image')({
+  top: '-5px',
+  left: 'auto',
+  right: '0px',
+  width: '100%',
+  bottom: 'auto',
+  position: 'absolute',
+  'object-fit': 'cover',
+})
+
+const Contaier = styled('section')({
+  flex: '0 0 auto',
+  width: '100%',
+  display: 'flex',
+  'max-width': '1320px',
+  'align-items': 'center',
+  'padding-top': TOKENS.DlSpaceSpaceSixunits,
+  'padding-left': TOKENS.DlSpaceSpaceTripleunit,
+  'padding-right': TOKENS.DlSpaceSpaceTripleunit,
+  'flex-direction': 'column',
+  'padding-bottom': TOKENS.DlSpaceSpaceSixunits,
+  '@media(max-width: 991px)': {
+    'padding-left': TOKENS.DlSpaceSpaceDoubleunit,
+    'padding-right': TOKENS.DlSpaceSpaceDoubleunit,
+  },
+})
+
+const Container30 = styled('div')({
+  display: 'flex',
+  'align-items': 'center',
+  'flex-direction': 'column',
+  '@media(max-width: 767px)': {
+    width: '80%',
+  },
+})
+
+const Container31 = styled('div')({
+  flex: '0 0 auto',
+  width: '48px',
+  height: '48px',
+  display: 'flex',
+  'align-items': 'center',
+  'border-radius': TOKENS.DlRadiusRadiusRadius75,
+  'flex-direction': 'column',
+  'justify-content': 'center',
+  'background-image': 'linear-gradient(310deg,#7928ca,#ff0080)',
+})
+
+const Icon = styled('svg')({
+  fill: TOKENS.DlColorGray800,
+  width: '24px',
+  height: '24px',
+})
+
+const Text30 = styled('h2')(projectStyleVariants, {
+  'margin-top': TOKENS.DlSpaceSpaceUnitandahalfunit,
+  'background-image': 'linear-gradient(310deg,#7928ca,#ff0080)',
+  'webkit-text-fill-color': 'transparent',
+  'webkit-background-clip': 'text',
+})
+
+const Text31 = styled('span')({
+  color: 'rgb(203, 12, 159)',
+  'white-space': 'normal',
+  'text-decoration': 'none',
+})
+
+const Text32 = styled('h3')(projectStyleVariants, {
+  color: TOKENS.DlColorSecondary600,
+  'margin-bottom': TOKENS.DlSpaceSpaceHalfunit,
+})
+
+const Text33 = styled('span')({
+  'font-weight': '700',
+  'white-space': 'normal',
+  'background-color': 'rgb(255, 255, 255)',
+})
+
+const Text34 = styled('span')({
+  '@media(max-width: 767px)': {
+    'text-align': 'center',
+  },
+  '@media(max-width: 479px)': {
+    'text-align': 'center',
+  },
+})
+
+const Text35 = styled('span')({
+  color: 'rgb(103, 116, 142)',
+  display: 'inline',
+  'font-weight': '400',
+  'white-space': 'normal',
+  'background-color': 'rgb(255, 255, 255)',
+})
+
+const Container32 = styled('div')({
+  flex: '0 0 auto',
+  width: '100%',
+  display: 'flex',
+  'margin-top': TOKENS.DlSpaceSpaceTripleunit,
+  'align-items': 'center',
+  'flex-direction': 'row',
+  'justify-content': 'center',
+  '@media(max-width: 767px)': {
+    'flex-direction': 'column',
+  },
+})
+
+const Container33 = styled('div')({
+  display: 'flex',
+  position: 'relative',
+  'box-shadow':
+    '0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important',
+  'align-items': 'center',
+  'padding-top': TOKENS.DlSpaceSpaceSixunits,
+  transition: '0.3s',
+  'padding-left': TOKENS.DlSpaceSpaceSixunits,
+  'border-radius': TOKENS.DlRadiusRadiusRadius1,
+  'padding-right': TOKENS.DlSpaceSpaceSixunits,
+  'flex-direction': 'column',
+  'padding-bottom': TOKENS.DlSpaceSpaceDoubleunit,
+  'background-size': 'cover',
+  'justify-content': 'center',
+  'background-image':
+    "url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/team-working.jpg')",
+  'background-position': 'center',
+  '&:hover': {
+    transform: 'scale(1.04)',
+  },
+})
+
+const Container34 = styled('div')({
+  top: '0px',
+  left: '0px',
+  right: 'auto',
+  width: '100%',
+  bottom: 'auto',
+  height: '100%',
+  position: 'absolute',
+  background: 'rgba(0,0,0,.4)',
+  'border-radius': TOKENS.DlRadiusRadiusRadius1,
+})
+
+const Container35 = styled('div')({
+  'z-index': '1',
+  display: 'flex',
+  'align-items': 'center',
+  'flex-direction': 'column',
+  'justify-content': 'center',
+})
+
+const Icon2 = styled('svg')({
+  fill: TOKENS.DlColorGray900,
+  width: '30px',
+  height: '30px',
+  'margin-bottom': TOKENS.DlSpaceSpaceTripleunit,
+})
+
+const Text36 = styled('h1')(projectStyleVariants, {
+  color: TOKENS.DlColorGrayWhite,
+  'max-width': '200px',
+  'text-align': 'center',
+  'margin-bottom': TOKENS.DlSpaceSpaceUnit,
+})
+
+const Text37 = styled('span')({
+  color: TOKENS.DlColorGrayWhite,
+  'margin-bottom': TOKENS.DlSpaceSpaceTripleunit,
+})
+
+const Container36 = styled('div')({
+  display: 'flex',
+  'align-items': 'flex-start',
+  'margin-left': TOKENS.DlSpaceSpaceFourunits,
+  'flex-direction': 'column',
+  '@media(max-width: 991px)': {
+    width: '45%',
+    'margin-left': TOKENS.DlSpaceSpaceUnit,
+  },
+  '@media(max-width: 767px)': {
+    width: '80%',
+    'margin-top': TOKENS.DlSpaceSpaceFourunits,
+    'align-items': 'center',
+    'margin-left': '0px',
+  },
+})
+
+const Divider = styled('div')({
+  flex: '0 0 auto',
+  width: '90%',
+  height: '1px',
+  display: 'flex',
+  opacity: '0.25',
+  'margin-top': '4rem',
+  'align-items': 'flex-start',
+  'border-radius': TOKENS.DlRadiusRadiusRadius75,
+  'margin-bottom': '4rem',
+  'flex-direction': 'column',
+  'background-color': TOKENS.DlColorGray700,
+  '@media(max-width: 767px)': {
+    'margin-top': TOKENS.DlSpaceSpaceDoubleunit,
+    'margin-bottom': TOKENS.DlSpaceSpaceDoubleunit,
+  },
+})
+
+const Container37 = styled('div')({
+  flex: '0 0 auto',
+  width: '100%',
+  display: 'flex',
+  'margin-top': TOKENS.DlSpaceSpaceTripleunit,
+  'align-items': 'center',
+  'flex-direction': 'row',
+  'justify-content': 'center',
+  '@media(max-width: 767px)': {
+    'margin-top': '0px',
+    'flex-direction': 'column',
+  },
+})
+
+const Container38 = styled('div')({
+  display: 'flex',
+  'align-items': 'flex-start',
+  'margin-right': TOKENS.DlSpaceSpaceFourunits,
+  'flex-direction': 'column',
+  '@media(max-width: 991px)': {
+    width: '45%',
+    'margin-right': TOKENS.DlSpaceSpaceUnit,
+  },
+  '@media(max-width: 767px)': {
+    width: '80%',
+    'align-items': 'center',
+    'margin-right': '0px',
+    'margin-bottom': TOKENS.DlSpaceSpaceFourunits,
+  },
+})
+
+const Container39 = styled('div')({
+  display: 'flex',
+  position: 'relative',
+  'box-shadow':
+    '0 8px 26px -4px hsla(0,0%,8%,.15),0 8px 9px -5px hsla(0,0%,8%,.06)!important',
+  'align-items': 'center',
+  'padding-top': TOKENS.DlSpaceSpaceSixunits,
+  transition: '0.3s',
+  'padding-left': TOKENS.DlSpaceSpaceSixunits,
+  'border-radius': TOKENS.DlRadiusRadiusRadius1,
+  'padding-right': TOKENS.DlSpaceSpaceSixunits,
+  'flex-direction': 'column',
+  'padding-bottom': TOKENS.DlSpaceSpaceDoubleunit,
+  'background-size': 'cover',
+  'justify-content': 'center',
+  'background-image':
+    'url("https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/coffee-shop.jpg")',
+  'background-position': 'center',
+  '&:hover': {
+    transform: 'scale(1.04)',
+  },
+})
+
+const Container40 = styled('div')({
+  top: '0px',
+  left: '0px',
+  right: 'auto',
+  width: '100%',
+  bottom: 'auto',
+  height: '100%',
+  position: 'absolute',
+  background: 'rgba(0,0,0,.4)',
+  'border-radius': TOKENS.DlRadiusRadiusRadius1,
+})
+
+const Container41 = styled('div')({
+  'z-index': '1',
+  display: 'flex',
+  'align-items': 'center',
+  'flex-direction': 'column',
+  'justify-content': 'center',
+})
+
+const Icon4 = styled('svg')({
+  fill: TOKENS.DlColorGray900,
+  width: '30px',
+  height: '30px',
+  'margin-bottom': TOKENS.DlSpaceSpaceTripleunit,
+})
+
+const Text40 = styled('h1')(projectStyleVariants, {
+  color: TOKENS.DlColorGrayWhite,
+  'max-width': '200px',
+  'text-align': 'center',
+  'margin-bottom': TOKENS.DlSpaceSpaceUnit,
+})
+
+const Text41 = styled('span')({
+  color: TOKENS.DlColorGrayWhite,
+  'margin-bottom': TOKENS.DlSpaceSpaceTripleunit,
+})
