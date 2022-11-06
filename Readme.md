@@ -1,6 +1,6 @@
 # iNTUBA
 
-[![iNIT](https://img.shields.io/badge/iNIT-certified-red?style=for-the-badge&logo=appveyor
+[![iNIT](https://img.shields.io/badge/iNIT-certified-red?style=for-the-badge&logo=appveyor)](https://github.com/initflode/intuba/iii.png)
 [![Build](https://img.shields.io/github/workflow/status/Tyrrrz/YoutubeDownloader/main/master)](https://github.com/Tyrrrz/YoutubeDownloader/actions)
 [![Release](https://img.shields.io/github/release/Tyrrrz/YoutubeDownloader.svg)](https://github.com/Tyrrrz/YoutubeDownloader/releases)
 [![Downloads](https://img.shields.io/github/downloads/Tyrrrz/YoutubeDownloader/total.svg)](https://github.com/Tyrrrz/YoutubeDownloader/releases)
